@@ -1,6 +1,6 @@
 import React from "react";
 
-function Article({title, date = "January 1, 1970", preview, minutes}) { 
+function Article({title="Components 101", date = "January 1, 1970", preview, minutes}) { 
     return (
         <article>
             <h3>{title}</h3>
@@ -18,5 +18,4 @@ let math = minutes < 30 ? Math.ceil(minutes / 5) : Math.ceil(minutes / 10);
 return `${emojis.repeat(math)} ${minutes} min read`
 } 
 
-export default Article
-
+export default Article;
